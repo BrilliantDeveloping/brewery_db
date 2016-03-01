@@ -22,6 +22,7 @@ module BreweryDB
   end
 
   module Resources
+    autoload :Adjuncts, 'brewery_db/resources/adjuncts'
     autoload :Beers, 'brewery_db/resources/beers'
     autoload :Breweries, 'brewery_db/resources/breweries'
     autoload :Brewery, 'brewery_db/resources/brewery'
@@ -30,6 +31,7 @@ module BreweryDB
     autoload :FluidSize, 'brewery_db/resources/fluid_size'
     autoload :Glassware, 'brewery_db/resources/glassware'
     autoload :Hops, 'brewery_db/resources/hops'
+    autoload :Ingredients, 'brewery_db/resources/ingredients'
     autoload :Locations, 'brewery_db/resources/locations'
     autoload :Menu, 'brewery_db/resources/menu'
     autoload :Search, 'brewery_db/resources/search'

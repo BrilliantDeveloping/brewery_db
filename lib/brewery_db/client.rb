@@ -25,6 +25,10 @@ module BreweryDB
       Resources::Brewery.new(config, id: id)
     end
 
+    def adjuncts
+      @adjuncts ||= Resources::Adjuncts.new(config)
+    end
+
     def breweries
       @breweries ||= Resources::Breweries.new(config)
     end
@@ -47,6 +51,10 @@ module BreweryDB
 
     def hops
       @hops ||= Resources::Hops.new(config)
+    end
+
+    def ingredients
+      @ingredients ||= Resources::Ingredients.new(config)
     end
 
     def locations
